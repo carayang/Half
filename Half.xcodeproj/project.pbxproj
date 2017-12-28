@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01E4199D19CB957B00C9EF5D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E4199C19CB957B00C9EF5D /* Cocoa.framework */; };
+		01E419A719CB957B00C9EF5D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01E419A519CB957B00C9EF5D /* InfoPlist.strings */; };
+		01E419A919CB957B00C9EF5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E419A819CB957B00C9EF5D /* main.m */; };
+		01E419AD19CB957B00C9EF5D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 01E419AB19CB957B00C9EF5D /* Credits.rtf */; };
+		01E419B019CB957B00C9EF5D /* HalfAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E419AF19CB957B00C9EF5D /* HalfAppDelegate.m */; };
+		01E419B319CB957B00C9EF5D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E419B119CB957B00C9EF5D /* MainMenu.xib */; };
+		01E419B519CB957B00C9EF5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01E419B419CB957B00C9EF5D /* Images.xcassets */; };
+		01E419BC19CB957B00C9EF5D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E419BB19CB957B00C9EF5D /* XCTest.framework */; };
+		01E419BD19CB957B00C9EF5D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E4199C19CB957B00C9EF5D /* Cocoa.framework */; };
+		01E419C519CB957B00C9EF5D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01E419C319CB957B00C9EF5D /* InfoPlist.strings */; };
+		01E419C719CB957B00C9EF5D /* MacOSWindowTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E419C619CB957B00C9EF5D /* MacOSWindowTestTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01E419BE19CB957B00C9EF5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01E4199119CB957B00C9EF5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01E4199819CB957B00C9EF5D;
+			remoteInfo = MacOSWindowTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01E4199919CB957B00C9EF5D /* Half.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Half.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01E4199C19CB957B00C9EF5D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		01E4199F19CB957B00C9EF5D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		01E419A019CB957B00C9EF5D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		01E419A119CB957B00C9EF5D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		01E419A419CB957B00C9EF5D /* Half-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Half-Info.plist"; sourceTree = "<group>"; };
+		01E419A619CB957B00C9EF5D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		01E419A819CB957B00C9EF5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		01E419AA19CB957B00C9EF5D /* Half-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Half-Prefix.pch"; sourceTree = "<group>"; };
+		01E419AC19CB957B00C9EF5D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		01E419AE19CB957B00C9EF5D /* HalfAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HalfAppDelegate.h; sourceTree = "<group>"; };
+		01E419AF19CB957B00C9EF5D /* HalfAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HalfAppDelegate.m; sourceTree = "<group>"; };
+		01E419B219CB957B00C9EF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		01E419B419CB957B00C9EF5D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		01E419BA19CB957B00C9EF5D /* HalfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01E419BB19CB957B00C9EF5D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		01E419C219CB957B00C9EF5D /* HalfTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HalfTests-Info.plist"; sourceTree = "<group>"; };
+		01E419C419CB957B00C9EF5D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		01E419C619CB957B00C9EF5D /* MacOSWindowTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacOSWindowTestTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01E4199619CB957B00C9EF5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E4199D19CB957B00C9EF5D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01E419B719CB957B00C9EF5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E419BD19CB957B00C9EF5D /* Cocoa.framework in Frameworks */,
+				01E419BC19CB957B00C9EF5D /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01E4199019CB957B00C9EF5D = {
+			isa = PBXGroup;
+			children = (
+				01E419A219CB957B00C9EF5D /* Half */,
+				01E419C019CB957B00C9EF5D /* MacOSWindowTestTests */,
+				01E4199B19CB957B00C9EF5D /* Frameworks */,
+				01E4199A19CB957B00C9EF5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01E4199A19CB957B00C9EF5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01E4199919CB957B00C9EF5D /* Half.app */,
+				01E419BA19CB957B00C9EF5D /* HalfTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01E4199B19CB957B00C9EF5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01E4199C19CB957B00C9EF5D /* Cocoa.framework */,
+				01E419BB19CB957B00C9EF5D /* XCTest.framework */,
+				01E4199E19CB957B00C9EF5D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01E4199E19CB957B00C9EF5D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01E4199F19CB957B00C9EF5D /* AppKit.framework */,
+				01E419A019CB957B00C9EF5D /* CoreData.framework */,
+				01E419A119CB957B00C9EF5D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		01E419A219CB957B00C9EF5D /* Half */ = {
+			isa = PBXGroup;
+			children = (
+				01E419AE19CB957B00C9EF5D /* HalfAppDelegate.h */,
+				01E419AF19CB957B00C9EF5D /* HalfAppDelegate.m */,
+				01E419B119CB957B00C9EF5D /* MainMenu.xib */,
+				01E419B419CB957B00C9EF5D /* Images.xcassets */,
+				01E419A319CB957B00C9EF5D /* Supporting Files */,
+			);
+			name = Half;
+			path = MacOSWindowTest;
+			sourceTree = "<group>";
+		};
+		01E419A319CB957B00C9EF5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01E419A419CB957B00C9EF5D /* Half-Info.plist */,
+				01E419A519CB957B00C9EF5D /* InfoPlist.strings */,
+				01E419A819CB957B00C9EF5D /* main.m */,
+				01E419AA19CB957B00C9EF5D /* Half-Prefix.pch */,
+				01E419AB19CB957B00C9EF5D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01E419C019CB957B00C9EF5D /* MacOSWindowTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				01E419C619CB957B00C9EF5D /* MacOSWindowTestTests.m */,
+				01E419C119CB957B00C9EF5D /* Supporting Files */,
+			);
+			path = MacOSWindowTestTests;
+			sourceTree = "<group>";
+		};
+		01E419C119CB957B00C9EF5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01E419C219CB957B00C9EF5D /* HalfTests-Info.plist */,
+				01E419C319CB957B00C9EF5D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01E4199819CB957B00C9EF5D /* Half */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01E419CA19CB957C00C9EF5D /* Build configuration list for PBXNativeTarget "Half" */;
+			buildPhases = (
+				01E4199519CB957B00C9EF5D /* Sources */,
+				01E4199619CB957B00C9EF5D /* Frameworks */,
+				01E4199719CB957B00C9EF5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Half;
+			productName = MacOSWindowTest;
+			productReference = 01E4199919CB957B00C9EF5D /* Half.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01E419B919CB957B00C9EF5D /* HalfTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01E419CD19CB957C00C9EF5D /* Build configuration list for PBXNativeTarget "HalfTests" */;
+			buildPhases = (
+				01E419B619CB957B00C9EF5D /* Sources */,
+				01E419B719CB957B00C9EF5D /* Frameworks */,
+				01E419B819CB957B00C9EF5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01E419BF19CB957B00C9EF5D /* PBXTargetDependency */,
+			);
+			name = HalfTests;
+			productName = MacOSWindowTestTests;
+			productReference = 01E419BA19CB957B00C9EF5D /* HalfTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01E4199119CB957B00C9EF5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CardGame;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = cara;
+				TargetAttributes = {
+					01E419B919CB957B00C9EF5D = {
+						TestTargetID = 01E4199819CB957B00C9EF5D;
+					};
+				};
+			};
+			buildConfigurationList = 01E4199419CB957B00C9EF5D /* Build configuration list for PBXProject "Half" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01E4199019CB957B00C9EF5D;
+			productRefGroup = 01E4199A19CB957B00C9EF5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01E4199819CB957B00C9EF5D /* Half */,
+				01E419B919CB957B00C9EF5D /* HalfTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01E4199719CB957B00C9EF5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E419A719CB957B00C9EF5D /* InfoPlist.strings in Resources */,
+				01E419B519CB957B00C9EF5D /* Images.xcassets in Resources */,
+				01E419AD19CB957B00C9EF5D /* Credits.rtf in Resources */,
+				01E419B319CB957B00C9EF5D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01E419B819CB957B00C9EF5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E419C519CB957B00C9EF5D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01E4199519CB957B00C9EF5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E419B019CB957B00C9EF5D /* HalfAppDelegate.m in Sources */,
+				01E419A919CB957B00C9EF5D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01E419B619CB957B00C9EF5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E419C719CB957B00C9EF5D /* MacOSWindowTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01E419BF19CB957B00C9EF5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01E4199819CB957B00C9EF5D /* Half */;
+			targetProxy = 01E419BE19CB957B00C9EF5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01E419A519CB957B00C9EF5D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01E419A619CB957B00C9EF5D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		01E419AB19CB957B00C9EF5D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01E419AC19CB957B00C9EF5D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		01E419B119CB957B00C9EF5D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01E419B219CB957B00C9EF5D /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		01E419C319CB957B00C9EF5D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01E419C419CB957B00C9EF5D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01E419C819CB957C00C9EF5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		01E419C919CB957C00C9EF5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		01E419CB19CB957C00C9EF5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacOSWindowTest/Half-Prefix.pch";
+				INFOPLIST_FILE = "MacOSWindowTest/Half-Info.plist";
+				PRODUCT_NAME = Half;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		01E419CC19CB957C00C9EF5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacOSWindowTest/Half-Prefix.pch";
+				INFOPLIST_FILE = "MacOSWindowTest/Half-Info.plist";
+				PRODUCT_NAME = Half;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		01E419CE19CB957C00C9EF5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacOSWindowTest.app/Contents/MacOS/MacOSWindowTest";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacOSWindowTest/MacOSWindowTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MacOSWindowTestTests/HalfTests-Info.plist";
+				PRODUCT_NAME = HalfTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		01E419CF19CB957C00C9EF5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacOSWindowTest.app/Contents/MacOS/MacOSWindowTest";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacOSWindowTest/MacOSWindowTest-Prefix.pch";
+				INFOPLIST_FILE = "MacOSWindowTestTests/HalfTests-Info.plist";
+				PRODUCT_NAME = HalfTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01E4199419CB957B00C9EF5D /* Build configuration list for PBXProject "Half" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01E419C819CB957C00C9EF5D /* Debug */,
+				01E419C919CB957C00C9EF5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01E419CA19CB957C00C9EF5D /* Build configuration list for PBXNativeTarget "Half" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01E419CB19CB957C00C9EF5D /* Debug */,
+				01E419CC19CB957C00C9EF5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01E419CD19CB957C00C9EF5D /* Build configuration list for PBXNativeTarget "HalfTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01E419CE19CB957C00C9EF5D /* Debug */,
+				01E419CF19CB957C00C9EF5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01E4199119CB957B00C9EF5D /* Project object */;
+}
